@@ -18,10 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
         let currentPage = null;
         if (event.target.classList.contains('home')) {
             currentPage = createHomePage();
+
         } else if (event.target.classList.contains('about')) {
             currentPage = createAboutPage();
+
         } else if (event.target.classList.contains('menu')) {
             currentPage = createMenuPage();
+            
         } else if (event.target.classList.contains('contact')) {
             currentPage = createContactPage();
         }
