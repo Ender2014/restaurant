@@ -9,8 +9,14 @@ const createHomePage = () => {
     const para = document.createElement('p');
     para .textContent = "BEST RESTAURANT";
 
+    const button = document.createElement('button');
+    button.classList.add("menu");
+    button.setAttribute("type", "button");
+    button.textContent = "Discover our menu"
+
     homePage.appendChild(logo);
     homePage.appendChild(para);
+    homePage.append(button);
 
     return homePage;
 };

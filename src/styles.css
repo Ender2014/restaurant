@@ -5,7 +5,9 @@
     font-family: Roboto;
     src: url(recources/roboto-regular-webfont.woff2);
 }
-
+*{
+    box-sizing: border-box;
+}
 :root {
     line-height: 1.5;
     /* Primary Colors */
@@ -94,17 +96,17 @@ a:hover, button:hover{
 }
 
 h1{
-    font-size: var(--font-size-header);
+    font-size: var(--font-size-large);
     font-weight: var(--fw-black);
 }
 
 h2{
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-main);
     font-weight: var(--fw-bold);
 }
 
 h3{
-    font-size: var(--font-size-main);
+    font-size: var(--font-size-small);
     font-weight: var(--fw-regular);
 }
 
@@ -119,7 +121,7 @@ body{
     height: 100vh;
     width: 100vw;
     display:grid;
-    grid-template-rows: 1fr 9fr;
+    grid-template-rows: 5em 1fr;
     background-size: cover;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), 
                         rgba(0, 0, 0, 0.5) ), 
@@ -133,13 +135,13 @@ body{
     align-items: flex-end;
     color:var(--color-white-text);
     position:sticky;
+    border-bottom: 1px solid var(--color-border-light);
 }
 
 .header .nav{
     width:100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border-bottom: 1px solid var(--color-border-light);
 }
 
 .header-left, .header-right{
@@ -169,18 +171,25 @@ body{
 
 #content{
     grid-row: 2/3;
-    padding: var(--medium-padding) var(--XL-padding);
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    position:relative;
 }
 
 .home-page{
     color:var(--color-white-text);
-    display:flex;
-    flex-direction: column;
-    justify-self: center;
-    align-items: center;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-page button{
+    border: none;
+    background-color: var(--color-button-bg);
+    color: var(--color-button-text);
+    padding: var(--small-padding);
+    border-radius: 10em;
+
 }
 
 .home-page > :nth-child(1){
@@ -191,6 +200,29 @@ body{
 .home-page > :nth-child(2){
     font-size: var(--font-size-XL);
 }
+
+.about-page{
+    display: grid;
+    grid-template-rows: 10em 1fr;
+    height:100%;
+}
+
+.heading{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white-text);
+    font-size: var(--font-size-XL);
+    font-weight: var(--fw-black);
+}
+
+.page{
+    padding: var(--medium-padding) var(--XL-padding);
+    background-color: var(--color-light-bg);
+    color:var(--color-primary-text);
+}
+
+
 
 
 
