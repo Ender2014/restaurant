@@ -1,0 +1,96 @@
+/* styles.css */
+/* CSS Reset - Start*/
+
+@font-face{
+    font-family: Roboto;
+    src: url(recources/roboto-regular-webfont.woff2);
+}
+
+:root {
+    line-height: 1.5;
+    --color-main-clr: #4A90E2;     
+    --color-contrast: #6EB5FF;      
+    --color-accent: #B3D4FF;        
+    --color-btn-hover: #5C9FD9;
+    --color-error: #FF3B30;
+    --color-btn-links:  #6EB5FF;     
+    --color-text-bg: #F1FAFF;      
+    --color-text-main: #F1FAFF; 
+
+    --color-read: #4CAF50;
+    --color-not-read: #F44336;
+    --color-still-read: #FF9800;
+    
+    --fw-thin: 100;
+    --fw-regular: 500;
+    --fw-bold: 600;
+    --fw-black: 700;
+
+    --font-size-small: 1.2rem;
+    --font-size-main: 1.4rem;
+    --font-size-large: 1.8rem;
+    --font-size-header: 3.2rem;
+  
+    --small-padding: 0.75rem;  
+    --medium-padding: 1.5rem;  
+    --large-padding: 2.25rem;   
+}
+
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: var(--font-size-small);
+    font-weight: var(--fw-thin);
+    opacity: 0.6;
+}
+
+
+ol[role="list"], ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+}
+
+li{
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+a:hover, button:hover{
+    cursor: pointer; 
+    transform: scale(1.05); 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: var(--font-size-main);
+    font-weight: var(--fw-regular);
+    background-size: cover;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), 
+                        rgba(0, 0, 0, 0.5) ), 
+                        url('images/rumman-amin-nKs-oXRGGEg-unsplash.jpg');
+    height: 100vh;
+}
