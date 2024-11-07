@@ -184,12 +184,12 @@ body{
     align-items: center;
 }
 
-.home-page .logo-text{
+.home-page > :nth-child(1){
     font-size: var(--font-size-large);
    
 }
 
-.home-page .para{
+.home-page > :nth-child(2){
     font-size: var(--font-size-XL);
 }
 
