@@ -57,8 +57,7 @@ h1, h2, h3, h4, h5, figure, p, ol, ul {
 
 p{
     font-size: var(--font-size-small);
-    font-weight: var(--fw-thin);
-    
+    font-weight: var(--fw-thin); 
 }
 
 
